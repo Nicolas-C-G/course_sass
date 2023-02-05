@@ -219,23 +219,23 @@ i {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .header__nav--links__items {
+  .header__nav--links__item {
     -webkit-animation: initial;
             animation: initial;
   }
-  .header__nav--links__items a:link,
-.header__nav--links__items a:visited {
+  .header__nav--links__item a:link,
+.header__nav--links__item a:visited {
     transform-origin: left;
     margin-right: initial;
     padding: 2rem;
     font-size: 1.2rem;
   }
-  .header__nav--links__items a:hover,
-.header__nav--links__items a:active {
+  .header__nav--links__item a:hover,
+.header__nav--links__item a:active {
     transform: rotateY(90deg);
   }
-  .header__nav--links__items a:link::after,
-.header__nav--links__items a:visited::after {
+  .header__nav--links__item a:link::after,
+.header__nav--links__item a:visited::after {
     top: 0;
     bottom: 100%;
     left: 100%;
