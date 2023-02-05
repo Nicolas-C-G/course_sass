@@ -1,7 +1,15 @@
+// The 1300px Mark break point
+@mixin media-desktop {
+  @media screen and (min-width: break-point(break-point-desktop)) {
+    @content;
+  }
+}
+
+
 // The 800px Mark break point
 @mixin media-tablet {
-    @media screen and (max-with: break-point(break-point-tablet)) {
-        @content;
+    @media screen and (max-width: break-point(break-point-tablet)) {
+      @content;
     }
 }
 
