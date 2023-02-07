@@ -16,7 +16,9 @@ body {
     ) [center-end] 1fr [container-end];
     grid-template-rows: min-content 90vh repeat(9, min-content);
 
-    // Media query
+    @include media-tablet {
+        grid-template-rows: min-content 100vh repeat(9, min-content);
+    }
 }
 
 li {
