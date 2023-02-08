@@ -13,6 +13,20 @@
     }
 }
 
+// The 600px Mark break point
+@mixin media-medium {
+  @media screen and (max-width: break-point(break-point-medium)) {
+    @content;
+  }
+}
+
+// The 400px Mark break point
+@mixin media-small {
+  @media screen and (max-width: break-point(break-point-small)) {
+    @content;
+  }
+}
+
 ::selection {
   background-color: var(--color-primary)
 }
