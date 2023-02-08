@@ -13,6 +13,10 @@
     }
 }
 
+::selection {
+  background-color: var(--color-primary)
+}
+
 @import '1.reset';
 @import '2.variables';
 @import '3.utilities';
@@ -25,3 +29,38 @@
 @import '10.clients';
 @import '11.register';
 @import '12.footer';
+
+// Placeholder Styles
+%bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// Section Padding
+%sec-padding {
+  padding: 6vh 4vw;
+}
+
+%sec-heading {
+  font-size: font-size(font-size-medium);
+  font-weight: font-weight(font-weight-light);
+  letter-spacing: 0.2rem;
+  color: var(--color-quinary);
+}
+
+%sec-para {
+  font-size: font-size(font-size-small);
+  font-family: "Balsamiq Sans", cursive;
+  letter-spacing: 0.2rem;
+  color: var(--color-quinary);
+}
+
+%sec-h3 {
+  font-size: font-size(font-size-small);
+  color: var(--color-quinary);
+}
+
+%sec-h4 {
+  color: var(--color-quinary);
+}
