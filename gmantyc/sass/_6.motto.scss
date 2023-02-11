@@ -30,6 +30,8 @@
             padding: 0.7rem 1.5rem;
             position: relative;
             transition: all 0.5s ease-in-out;
+            overflow: hidden;
+
 
             span {
                 display: block;
@@ -75,6 +77,40 @@
                 transition: 0.5s;
                 transition-delay: 0s;
             }
+        }
+
+        &--link:hover,
+        &--link:active {
+            background: var(--color-primary);
+            transition-delay: 1s;
+        }
+
+        &--link:hover span:first-child,
+        &--link:active span:first-child {
+            left: 100%;
+            transition-duration: 1s;
+            transition-delay: 0s;
+        }
+
+        &--link:hover span:nth-child(2),
+        &--link:active span:nth-child(2) {
+            top: 100%;
+            transition-duration: 1s;
+            transition-delay: 0.25s;
+        }
+        
+        &--link:hover span:nth-child(3),
+        &--link:active span:nth-child(3) {
+            right: 100%;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+        }
+
+        &--link:hover span:nth-child(4),
+        &--link:active span:nth-child(4) {
+            top: -100%;
+            transition-duration: 1s;
+            transition-delay: 0.75s;
         }
     }
 }
