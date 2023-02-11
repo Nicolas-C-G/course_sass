@@ -759,7 +759,6 @@ i {
 .testimonials {
   background-color: var(--color-quaternary);
   grid-column: container-start/container-end;
-  height: 600px;
 }
 
 .clients {
