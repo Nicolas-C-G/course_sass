@@ -27,23 +27,43 @@ const progressTick = document.querySelectorAll('.fa-check');
 let max = 4;
 let current = 1;
 
+//Next Button Event Listener
+function tick() {
+    progressStep[current - 1].classList.add("active");
+    progressNumber[current - 1].classList.add("active"); 
+    progressTick[current - 1].classList.add("active");
+    current += 1;
+}
+
+//Next Button Event Listener
+function untick() {
+    progressStep[current - 2].classList.remove("active");
+    progressNumber[current - 2].classList.remove("active");
+    progressTick[current - 2].classList.remove("active");
+    current -= 1;
+}
+
 //Next Btns Events
 firstNextBtn.addEventListener("click", () => {
     slidePage.style.marginLeft = "-33%";
+    tick();
 });
 
 //Second Btns Events
 secondNextBtn.addEventListener("click", () => {
     slidePage.style.marginLeft = "-100%";
+    tick();
 });
 
 //Third Btns Events
 thirdNextBtn.addEventListener("click", () => {
     slidePage.style.marginLeft = "-200%";
+    tick();
 });
 
 //Submit Button Event Listener
 submitBtn.addEventListener("click", () => {
+    tick();
     setTimeout(() => {
         alert("Your Form Has Been Successfully Submitted, Thank You My Friend");
         location.reload();
@@ -51,3 +71,21 @@ submitBtn.addEventListener("click", () => {
 });
 
 //Previous Btns Events
+
+//First Previous Button Event
+firstPrevBtn.addEventListener("click", () => {
+    slidePage.style.marginLeft = "0";
+    untick();
+});
+
+//Second Previous Button Event
+secondPrevBtn.addEventListener("click", () => {
+    slidePage.style.marginLeft = "-33%";
+    untick();
+});
+
+//Third Previous Button Event
+thirdPrevBtn.addEventListener("click", () => {
+    slidePage.style.marginLeft = "-100%";
+    untick();
+});
