@@ -1,0 +1,28 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Baloo Tamma 2", cursive;
+    line-height: 1.8;
+  
+    display: flex;
+}
+
+/* List Items */
+li {
+    list-style: none;
+}
+  
+/* Abchor Tags */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+main {
+    flex: 1;
+}
+  

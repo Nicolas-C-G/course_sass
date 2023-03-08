@@ -1,0 +1,34 @@
+//******************** Colors **********************
+html {
+    /* Main Color */
+  --primary-color: #014d4e;
+
+  /* Secondary Color */
+  --secondary-color: #ff9408;
+
+  /* Secondary Color Modified */
+  --secondary-color-m: #ff94088e;
+
+  /* tertiary color */
+  --tertiary-color: #017374;
+
+  /* tertiary color modified */
+  --tertiary-color-m: #01727498;
+}
+
+$font-sizes: (
+    "font-size-1": calc(0.8rem + 1.5vw), 
+    "font-size-2": calc(1rem + 0.66667vw),
+    "font-size-3": calc(1.2rem + 2vw),
+    "font-size-4": 1.5rem,
+    "font-size-5": calc(1.5rem + 1vw),
+    "font-size-6": 1.8rem,
+    "font-size-7": 2rem,
+    "font-size-8": calc(2rem + 3vw),
+    "font-size-9": 3rem,
+    "font-size-10": 4rem 
+);
+
+@function font-size($font-size-num) {
+    @return map-get($font-sizes, $font-size-num );
+}
